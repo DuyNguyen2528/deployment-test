@@ -1,5 +1,5 @@
-const URL = "https://taskarenacsc307-cqc4axhbh3e9aveg.westus3-01.azurewebsites.net/"
-
+const URL = "https://taskarenacsc307-cqc4axhbh3e9aveg.westus3-01.azurewebsites.net"
+//const URL = "http://localhost:8001"
 function FetchPostUser(account) {
     const promise = fetch(
         `${URL}/adduser/`,
