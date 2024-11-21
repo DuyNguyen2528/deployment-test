@@ -5,8 +5,10 @@ import userServices from './models/user-services.js'
 
 const app = express()
 const port = 8001
-
-app.use(cors())
+const corsOptions = {
+    origin: 'https://jolly-sea-09ed5c51e.5.azurestaticapps.net',
+  };
+app.use(cors(corsOptions))
 app.use(express.json())
 
 app.get('/', (req, res) => {
