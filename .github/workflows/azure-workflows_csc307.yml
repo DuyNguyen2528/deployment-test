@@ -36,6 +36,8 @@ jobs:
         with:
           name: node-app
           path: release.zip
+      - name: List files in directory
+        run: ls -al packages/backend
 
   deploy:
     runs-on: ubuntu-latest
@@ -51,7 +53,7 @@ jobs:
           name: node-app
 
       - name: Unzip artifact for deployment
-        run: unzip release.zip
+        run: unzip packages/backend/release.zip
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
