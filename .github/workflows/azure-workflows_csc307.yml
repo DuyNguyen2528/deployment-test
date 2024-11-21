@@ -36,7 +36,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: node-app
-          path: packages/backendrelease.zip
+          path: packages/backend/release.zip
       - name: List files in directory
         run: ls -al packages/backend
 
