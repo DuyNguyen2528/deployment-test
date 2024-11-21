@@ -1,6 +1,8 @@
+const URL = "https://taskarenacsc307-cqc4axhbh3e9aveg.westus3-01.azurewebsites.net/"
+
 function FetchPostUser(account) {
     const promise = fetch(
-        'https://taskarena-hxd7fcczhcdgfnch.westus3-01.azurewebsites.net/adduser/',
+        `${URL}/adduser/`,
         {
             method: 'POST',
             headers: {
@@ -17,14 +19,14 @@ function FetchPostUser(account) {
 
 function FetchFindUserName(username) {
     const promise = fetch(
-        `https://taskarena-hxd7fcczhcdgfnch.westus3-01.azurewebsites.net/findusername?username=${username}`
+        `${URL}/findusername?username=${username}`
     )
     return promise
 }
 function FindAccount(username, password) {
     //console.log(username, password);
     const promise = fetch(
-        `https://taskarena-hxd7fcczhcdgfnch.westus3-01.azurewebsites.net/findaccount?username=${username}&password=${password}`
+        `${URL}/findaccount?username=${username}&password=${password}`
     )
     return promise
 }
