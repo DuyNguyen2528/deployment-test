@@ -2,11 +2,15 @@
     "name": "app",
     "version": "1.0.0",
     "main": "index.js",
+    "type": "module",
     "scripts": {
         "lint": "npx eslint . && npx prettier --check .",
         "test": "npx jest",
         "backend": "npm -w packages/backend start",
-        "frontend": "npm -w packages/frontend start"
+        "frontend": "npm -w packages/frontend start",
+        "build-frontend": "npm -w packages/frontend run build",
+        "build-backend": "npm -w packages/backend run build",
+        "lint-backend": "npm -w packages/backend run lint"
     },
     "author": "",
     "license": "ISC",
