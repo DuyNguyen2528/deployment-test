@@ -10,7 +10,8 @@
         "frontend": "npm -w packages/frontend start",
         "build-frontend": "npm -w packages/frontend run build",
         "build-backend": "npm -w packages/backend run build",
-        "lint-backend": "npm -w packages/backend run lint"
+        "lint-backend": "npm -w packages/backend run lint",
+        "build": "npm run build-frontend && npm run build-backend"
     },
     "author": "",
     "license": "ISC",
