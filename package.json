@@ -2,11 +2,16 @@
     "name": "app",
     "version": "1.0.0",
     "main": "index.js",
+    "type": "module",
     "scripts": {
         "lint": "npx eslint . && npx prettier --check .",
         "test": "echo \"Error: no test specified\" ",
         "backend": "npm -w packages/backend start",
-        "frontend": "npm -w packages/frontend start"
+        "frontend": "npm -w packages/frontend start",
+        "build-frontend": "npm -w packages/frontend run build",
+        "build-backend": "npm -w packages/backend run build",
+        "lint-backend": "npm -w packages/backend run lint",
+        "build": "npm run build-frontend && npm run build-backend"
     },
     "author": "",
     "license": "ISC",
@@ -24,11 +29,6 @@
         "react-dom": "^18.3.1"
     },
     "devDependencies": {
-        "@babel/core": "^7.26.0",
-        "@babel/eslint-parser": "^7.25.9",
-        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-        "@babel/preset-env": "^7.26.0",
-        "@babel/preset-react": "^7.25.9",
         "@eslint/js": "^9.15.0",
         "@typescript-eslint/eslint-plugin": "^8.15.0",
         "@typescript-eslint/parser": "^8.15.0",
