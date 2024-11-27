@@ -1,4 +1,4 @@
-const URL = "https://csc307-cjbaece4hebag3hj.westus3-01.azurewebsites.net"
+const URL = "http://csc307-cjbaece4hebag3hj.westus3-01.azurewebsites.net"
 //const URL = "http://localhost:8001"
 function FetchPostUser(account) {
     const promise = fetch(
