@@ -23,11 +23,12 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm install -g nodemon --workspaces=false
-          npm install cors --workspaces=false
-          npm install dotenv --workspaces=false
-          npm install express --workspaces=false
-          npm install mongoose --workspaces=false
+          cd packages/backend
+          npm install -g nodemon
+          npm install cors
+          npm install dotenv
+          npm install express
+          npm install mongoose
           npm run -w backend build --if-present
           npm run -w backend test --if-present
         working-directory: packages/backend
