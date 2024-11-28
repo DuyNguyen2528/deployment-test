@@ -25,7 +25,7 @@ jobs:
         run: |
           npm install -g nodemon --workspaces=false
           npm install cors --workspaces=false
-          npm install dorenv --workspaces=false
+          npm install dotenv --workspaces=false
           npm install express --workspaces=false
           npm install mongoose --workspaces=false
           npm run -w backend build --if-present
