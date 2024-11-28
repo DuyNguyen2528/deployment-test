@@ -23,7 +23,7 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm install -g nodemon--workspaces=false
+          npm install -g nodemon --workspaces=false
           npm install cors --workspaces=false
           npm install dorenv --workspaces=false
           npm install express --workspaces=false
