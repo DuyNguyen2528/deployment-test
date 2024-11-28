@@ -24,13 +24,9 @@ jobs:
       - name: npm install, build, and test
         run: |
           cd packages/backend
-          npm install -g nodemon
-          npm install cors
-          npm install dotenv
-          npm install express
-          npm install mongoose
-          npm run -w backend build --if-present
-          npm run -w backend test --if-present
+          npm ci
+          npm run -w packages/backend build --if-present
+          npm run -w packages/backend test --if-present
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
